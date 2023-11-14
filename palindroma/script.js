@@ -6,9 +6,11 @@ Chiedere all’utente di inserire una parola
 
 1) creare una variabile con un prompt, dove l'utente inserira una parola
 
-2) creare una funzione per capire se la parola inserita dall'utente e palindroma o no, quindi creando una variabile per rovesciare la parola inserita, per capire se effetivamente e palindroma 
+Creare una funzione per capire se la parola inserita è palindroma
 
-Creare una funzione per  rovesciare le parole, e creare un condizione che mi dica se la parola inserita è palindroma. Quindi true o false
+1) creare una funzione per capire se la parola inserita dall'utente e palindroma o no, quindi creando una variabile per rovesciare la parola inserita, per capire se effetivamente e palindroma 
+
+2) Creo un condizione che mi dica se la parola inserita è palindroma. Quindi true o false
 
 */
 
@@ -25,6 +27,7 @@ function ePalindroma(parola) {
   return lowercaseParola === rovesciaParola;
 }
 
+//Creo un condizione che mi dica se la parola inserita è palindroma. Quindi true o false
 if (ePalindroma(userInput)) {
   console.log(`${userInput} è una parola palindroma`);
 } else {

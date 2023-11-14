@@ -13,6 +13,9 @@
     con un funzione generiamo un numero random tra 1 a 5 
 
    3)Sommiamo i due numeri
+
+    generare un numero casuale per il computer, e poi creare una variante con la somma dei numeri
+
    4)Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
    Dichiariamo chi ha vinto.
 
@@ -42,3 +45,15 @@ const numeroUtente = Number(prompt('Inserisci un numero da 1 a 5'));
 function generaNumeroCasuale() {
   return Math.floor(Math.random() * 5) + 1;
 }
+
+/*
+3)Sommiamo i due numeri
+
+    generare un numero casuale per il computer, e poi creare una variante con la somma dei numeri
+*/
+
+//generare un numero random al computer
+const numeroComputer = generaNumeroCasuale();
+
+//sommare i numeri
+const sommaNumeri = numeroUtente + numeroComputer;

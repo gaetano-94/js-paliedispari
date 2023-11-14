@@ -17,8 +17,10 @@
     generare un numero casuale per il computer, e poi creare una variante con la somma dei numeri
 
    4)Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-   Dichiariamo chi ha vinto.
 
+    creo una funzione per verificare se il numero inserito e pari
+
+   5)Dichiariamo chi ha vinto.
 */
 
 /*1)L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
@@ -57,3 +59,16 @@ const numeroComputer = generaNumeroCasuale();
 
 //sommare i numeri
 const sommaNumeri = numeroUtente + numeroComputer;
+
+/*
+4)Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+
+    creo una funzione per verificare se il numero inserito e pari
+*/
+
+//funzione numero pari
+function ePari(numero) {
+  return numero % 2 === 0;
+}
+
+const risultato = ePari(sommaNumeri);

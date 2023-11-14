@@ -21,6 +21,8 @@
     creo una funzione per verificare se il numero inserito e pari
 
    5)Dichiariamo chi ha vinto.
+
+   creo una condizione che mi dice se a vincere e l'utente o il computer
 */
 
 /*1)L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
@@ -71,4 +73,17 @@ function ePari(numero) {
   return numero % 2 === 0;
 }
 
-const risultato = ePari(sommaNumeri);
+const risultato = ePari(sommaNumeri) ? 'pari' : 'dispari';
+
+/*
+5)Dichiariamo chi ha vinto.
+
+   creo una condizione che mi dice se a vincere e l'utente o il computer
+*/
+
+// condizione con if e else
+if (risultato === sceltaUtente) {
+  console.log(`Hai vinto la somma è ${risultato}`);
+} else {
+  console.log(`il computer ha vinto. La somma è ${risultato}`);
+}
